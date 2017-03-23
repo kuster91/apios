@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E725BB741E2A3DC70059E8D5 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E725BB731E2A3DC70059E8D5 /* GameManager.swift */; };
+		E725BB761E2A41C40059E8D5 /* CollectablesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E725BB751E2A41C40059E8D5 /* CollectablesController.swift */; };
+		E7455BDF1E299CDD003A5A5F /* witcher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7455BDE1E299CDD003A5A5F /* witcher.jpg */; };
+		E7455BE31E29A06B003A5A5F /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7455BE21E29A06B003A5A5F /* GameplayScene.sks */; };
+		E7455BE51E29A0D2003A5A5F /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7455BE41E29A0D2003A5A5F /* GameplayScene.swift */; };
+		E7455BE91E29B110003A5A5F /* Coin.png in Resources */ = {isa = PBXBuildFile; fileRef = E7455BE81E29B110003A5A5F /* Coin.png */; };
+		E7455BEB1E29B11B003A5A5F /* trap.png in Resources */ = {isa = PBXBuildFile; fileRef = E7455BEA1E29B11B003A5A5F /* trap.png */; };
+		E7455BF01E29D271003A5A5F /* GameplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7455BEF1E29D271003A5A5F /* GameplayController.swift */; };
+		E7AFDC9C1E2BA51E003CBF8E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFDC9B1E2BA51E003CBF8E /* AudioManager.swift */; };
+		E7AFDC9E1E2BC0DA003CBF8E /* goal.png in Resources */ = {isa = PBXBuildFile; fileRef = E7AFDC9D1E2BC0DA003CBF8E /* goal.png */; };
+		E7E32BE81E2A67A800B4DB34 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E32BE71E2A67A800B4DB34 /* GameData.swift */; };
+		E7F2717D1E29536D00AB9938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2717C1E29536D00AB9938 /* AppDelegate.swift */; };
+		E7F271811E29536E00AB9938 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7F271801E29536E00AB9938 /* Actions.sks */; };
+		E7F271851E29536E00AB9938 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F271841E29536E00AB9938 /* GameViewController.swift */; };
+		E7F271881E29536E00AB9938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F271861E29536E00AB9938 /* Main.storyboard */; };
+		E7F2718A1E29536E00AB9938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F271891E29536E00AB9938 /* Assets.xcassets */; };
+		E7F2718D1E29536E00AB9938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F2718B1E29536E00AB9938 /* LaunchScreen.storyboard */; };
+		E7F271A31E2958BC00AB9938 /* Pause Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F2719F1E2958BC00AB9938 /* Pause Menu.png */; };
+		E7F271A41E2958BC00AB9938 /* Quit Button 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271A01E2958BC00AB9938 /* Quit Button 2.png */; };
+		E7F271A51E2958BC00AB9938 /* Resume Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271A11E2958BC00AB9938 /* Resume Button.png */; };
+		E7F271A61E2958BC00AB9938 /* Show Score.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271A21E2958BC00AB9938 /* Show Score.png */; };
+		E7F271AC1E2958D000AB9938 /* Background music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7F271A81E2958D000AB9938 /* Background music.mp3 */; };
+		E7F271AD1E2958D000AB9938 /* Click Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7F271A91E2958D000AB9938 /* Click Sound.wav */; };
+		E7F271AE1E2958D000AB9938 /* Coin Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7F271AA1E2958D000AB9938 /* Coin Sound.wav */; };
+		E7F271AF1E2958D000AB9938 /* Life Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7F271AB1E2958D000AB9938 /* Life Sound.wav */; };
+		E7F271C21E2958EB00AB9938 /* Pause Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271B21E2958EB00AB9938 /* Pause Button.png */; };
+		E7F271C31E2958EB00AB9938 /* Ready.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271B31E2958EB00AB9938 /* Ready.png */; };
+		E7F271C41E2958EB00AB9938 /* Score.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271B41E2958EB00AB9938 /* Score.png */; };
+		E7F271C51E2958EB00AB9938 /* Back Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271B61E2958EB00AB9938 /* Back Button.png */; };
+		E7F271C61E2958EB00AB9938 /* Check Sign.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271B71E2958EB00AB9938 /* Check Sign.png */; };
+		E7F271C71E2958EB00AB9938 /* Easy Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271B81E2958EB00AB9938 /* Easy Button.png */; };
+		E7F271C81E2958EB00AB9938 /* Hard Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271B91E2958EB00AB9938 /* Hard Button.png */; };
+		E7F271C91E2958EB00AB9938 /* Medium Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271BA1E2958EB00AB9938 /* Medium Button.png */; };
+		E7F271CA1E2958EB00AB9938 /* Highscore Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271BC1E2958EB00AB9938 /* Highscore Button.png */; };
+		E7F271CB1E2958EB00AB9938 /* Music Off Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271BD1E2958EB00AB9938 /* Music Off Button.png */; };
+		E7F271CC1E2958EB00AB9938 /* Music On Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271BE1E2958EB00AB9938 /* Music On Button.png */; };
+		E7F271CD1E2958EB00AB9938 /* Options Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271BF1E2958EB00AB9938 /* Options Button.png */; };
+		E7F271CE1E2958EB00AB9938 /* Quit Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271C01E2958EB00AB9938 /* Quit Button.png */; };
+		E7F271CF1E2958EB00AB9938 /* Start Game Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271C11E2958EB00AB9938 /* Start Game Button.png */; };
+		E7F271D71E29595400AB9938 /* chest.gif in Resources */ = {isa = PBXBuildFile; fileRef = E7F271D51E29595400AB9938 /* chest.gif */; };
+		E7F271D81E29595400AB9938 /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271D61E29595400AB9938 /* wall.png */; };
+		E7F271DA1E29595B00AB9938 /* Sphere.gif in Resources */ = {isa = PBXBuildFile; fileRef = E7F271D91E29595B00AB9938 /* Sphere.gif */; };
+		E7F271E11E29618800AB9938 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7F271E01E29618700AB9938 /* MainMenu.sks */; };
+		E7F271E31E29632900AB9938 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F271E21E29632900AB9938 /* MainMenuScene.swift */; };
+		E7F271E91E296A2700AB9938 /* HighscoreScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7F271E81E296A2700AB9938 /* HighscoreScene.sks */; };
+		E7F271EF1E296AE000AB9938 /* Game BG.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271EB1E296AE000AB9938 /* Game BG.png */; };
+		E7F271F01E296AE000AB9938 /* Highscore BG.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271EC1E296AE000AB9938 /* Highscore BG.png */; };
+		E7F271F11E296AE000AB9938 /* Menu BG.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271ED1E296AE000AB9938 /* Menu BG.png */; };
+		E7F271F21E296AE000AB9938 /* Options BG.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F271EE1E296AE000AB9938 /* Options BG.png */; };
+		E7F271F51E296C8F00AB9938 /* blow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7F271F41E296C8F00AB9938 /* blow.ttf */; };
+		E7F271F71E296DCE00AB9938 /* OptionScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7F271F61E296DCE00AB9938 /* OptionScene.sks */; };
+		E7F271F91E296F4100AB9938 /* HighscoreScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F271F81E296F4100AB9938 /* HighscoreScene.swift */; };
+		E7F271FB1E296F7D00AB9938 /* OptionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F271FA1E296F7D00AB9938 /* OptionScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E725BB731E2A3DC70059E8D5 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		E725BB751E2A41C40059E8D5 /* CollectablesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectablesController.swift; sourceTree = "<group>"; };
+		E7455BDE1E299CDD003A5A5F /* witcher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = witcher.jpg; sourceTree = "<group>"; };
+		E7455BE21E29A06B003A5A5F /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
+		E7455BE41E29A0D2003A5A5F /* GameplayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayScene.swift; sourceTree = "<group>"; };
+		E7455BE81E29B110003A5A5F /* Coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coin.png; sourceTree = "<group>"; };
+		E7455BEA1E29B11B003A5A5F /* trap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trap.png; sourceTree = "<group>"; };
+		E7455BEF1E29D271003A5A5F /* GameplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayController.swift; sourceTree = "<group>"; };
+		E7AFDC9B1E2BA51E003CBF8E /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		E7AFDC9D1E2BC0DA003CBF8E /* goal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = goal.png; path = pic/goal.png; sourceTree = "<group>"; };
+		E7E32BE71E2A67A800B4DB34 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		E7F271791E29536D00AB9938 /* APIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F2717C1E29536D00AB9938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E7F271801E29536E00AB9938 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		E7F271841E29536E00AB9938 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E7F271871E29536E00AB9938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E7F271891E29536E00AB9938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7F2718C1E29536E00AB9938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E7F2718E1E29536E00AB9938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7F2719F1E2958BC00AB9938 /* Pause Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause Menu.png"; sourceTree = "<group>"; };
+		E7F271A01E2958BC00AB9938 /* Quit Button 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quit Button 2.png"; sourceTree = "<group>"; };
+		E7F271A11E2958BC00AB9938 /* Resume Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Resume Button.png"; sourceTree = "<group>"; };
+		E7F271A21E2958BC00AB9938 /* Show Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Show Score.png"; sourceTree = "<group>"; };
+		E7F271A81E2958D000AB9938 /* Background music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Background music.mp3"; sourceTree = "<group>"; };
+		E7F271A91E2958D000AB9938 /* Click Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Click Sound.wav"; sourceTree = "<group>"; };
+		E7F271AA1E2958D000AB9938 /* Coin Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Coin Sound.wav"; sourceTree = "<group>"; };
+		E7F271AB1E2958D000AB9938 /* Life Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Life Sound.wav"; sourceTree = "<group>"; };
+		E7F271B21E2958EB00AB9938 /* Pause Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause Button.png"; sourceTree = "<group>"; };
+		E7F271B31E2958EB00AB9938 /* Ready.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ready.png; sourceTree = "<group>"; };
+		E7F271B41E2958EB00AB9938 /* Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Score.png; sourceTree = "<group>"; };
+		E7F271B61E2958EB00AB9938 /* Back Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back Button.png"; sourceTree = "<group>"; };
+		E7F271B71E2958EB00AB9938 /* Check Sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Check Sign.png"; sourceTree = "<group>"; };
+		E7F271B81E2958EB00AB9938 /* Easy Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Easy Button.png"; sourceTree = "<group>"; };
+		E7F271B91E2958EB00AB9938 /* Hard Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hard Button.png"; sourceTree = "<group>"; };
+		E7F271BA1E2958EB00AB9938 /* Medium Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medium Button.png"; sourceTree = "<group>"; };
+		E7F271BC1E2958EB00AB9938 /* Highscore Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Highscore Button.png"; sourceTree = "<group>"; };
+		E7F271BD1E2958EB00AB9938 /* Music Off Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Music Off Button.png"; sourceTree = "<group>"; };
+		E7F271BE1E2958EB00AB9938 /* Music On Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Music On Button.png"; sourceTree = "<group>"; };
+		E7F271BF1E2958EB00AB9938 /* Options Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Options Button.png"; sourceTree = "<group>"; };
+		E7F271C01E2958EB00AB9938 /* Quit Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quit Button.png"; sourceTree = "<group>"; };
+		E7F271C11E2958EB00AB9938 /* Start Game Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Start Game Button.png"; sourceTree = "<group>"; };
+		E7F271D51E29595400AB9938 /* chest.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = chest.gif; path = pic/chest.gif; sourceTree = "<group>"; };
+		E7F271D61E29595400AB9938 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wall.png; path = pic/wall.png; sourceTree = "<group>"; };
+		E7F271D91E29595B00AB9938 /* Sphere.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Sphere.gif; path = pic/Sphere.gif; sourceTree = "<group>"; };
+		E7F271E01E29618700AB9938 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		E7F271E21E29632900AB9938 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		E7F271E81E296A2700AB9938 /* HighscoreScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HighscoreScene.sks; sourceTree = "<group>"; };
+		E7F271EB1E296AE000AB9938 /* Game BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Game BG.png"; sourceTree = "<group>"; };
+		E7F271EC1E296AE000AB9938 /* Highscore BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Highscore BG.png"; sourceTree = "<group>"; };
+		E7F271ED1E296AE000AB9938 /* Menu BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu BG.png"; sourceTree = "<group>"; };
+		E7F271EE1E296AE000AB9938 /* Options BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Options BG.png"; sourceTree = "<group>"; };
+		E7F271F41E296C8F00AB9938 /* blow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = blow.ttf; sourceTree = "<group>"; };
+		E7F271F61E296DCE00AB9938 /* OptionScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OptionScene.sks; sourceTree = "<group>"; };
+		E7F271F81E296F4100AB9938 /* HighscoreScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighscoreScene.swift; sourceTree = "<group>"; };
+		E7F271FA1E296F7D00AB9938 /* OptionScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7F271761E29536D00AB9938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7455BEE1E29D258003A5A5F /* Game Controllers And Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E7455BEF1E29D271003A5A5F /* GameplayController.swift */,
+				E725BB731E2A3DC70059E8D5 /* GameManager.swift */,
+				E725BB751E2A41C40059E8D5 /* CollectablesController.swift */,
+			);
+			name = "Game Controllers And Managers";
+			sourceTree = "<group>";
+		};
+		E7AFDC9A1E2BA500003CBF8E /* Audio Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E7AFDC9B1E2BA51E003CBF8E /* AudioManager.swift */,
+			);
+			name = "Audio Manager";
+			sourceTree = "<group>";
+		};
+		E7E32BE61E2A678F00B4DB34 /* Game Data Class */ = {
+			isa = PBXGroup;
+			children = (
+				E7E32BE71E2A67A800B4DB34 /* GameData.swift */,
+			);
+			name = "Game Data Class";
+			sourceTree = "<group>";
+		};
+		E7F271701E29536D00AB9938 = {
+			isa = PBXGroup;
+			children = (
+				E7F2717B1E29536D00AB9938 /* APIOS */,
+				E7F271971E29543300AB9938 /* Game Classes */,
+				E7F271DF1E29616500AB9938 /* Scenes */,
+				E7F2719D1E29554000AB9938 /* Assets */,
+				E7F2717A1E29536D00AB9938 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7F2717A1E29536D00AB9938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7F271791E29536D00AB9938 /* APIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7F2717B1E29536D00AB9938 /* APIOS */ = {
+			isa = PBXGroup;
+			children = (
+				E7F2717C1E29536D00AB9938 /* AppDelegate.swift */,
+				E7F271801E29536E00AB9938 /* Actions.sks */,
+				E7F271841E29536E00AB9938 /* GameViewController.swift */,
+				E7F271861E29536E00AB9938 /* Main.storyboard */,
+				E7F271891E29536E00AB9938 /* Assets.xcassets */,
+				E7F2718B1E29536E00AB9938 /* LaunchScreen.storyboard */,
+				E7F2718E1E29536E00AB9938 /* Info.plist */,
+			);
+			path = APIOS;
+			sourceTree = "<group>";
+		};
+		E7F271941E2953FD00AB9938 /* Scenes Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E7F271E21E29632900AB9938 /* MainMenuScene.swift */,
+				E7F271F81E296F4100AB9938 /* HighscoreScene.swift */,
+				E7F271FA1E296F7D00AB9938 /* OptionScene.swift */,
+				E7455BE41E29A0D2003A5A5F /* GameplayScene.swift */,
+			);
+			name = "Scenes Classes";
+			sourceTree = "<group>";
+		};
+		E7F271971E29543300AB9938 /* Game Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E7AFDC9A1E2BA500003CBF8E /* Audio Manager */,
+				E7E32BE61E2A678F00B4DB34 /* Game Data Class */,
+				E7455BEE1E29D258003A5A5F /* Game Controllers And Managers */,
+				E7F271941E2953FD00AB9938 /* Scenes Classes */,
+			);
+			name = "Game Classes";
+			sourceTree = "<group>";
+		};
+		E7F2719D1E29554000AB9938 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E7F271F31E296C8F00AB9938 /* Fonts */,
+				E7F271EA1E296AE000AB9938 /* Backgrounds */,
+				E7F271D41E29594200AB9938 /* Map elements */,
+				E7F271D31E29593000AB9938 /* Player */,
+				E7F271B01E2958EB00AB9938 /* Buttons */,
+				E7F271A71E2958D000AB9938 /* Music */,
+				E7F2719E1E2958BC00AB9938 /* Pause Panel And Buttons */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		E7F2719E1E2958BC00AB9938 /* Pause Panel And Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E7F2719F1E2958BC00AB9938 /* Pause Menu.png */,
+				E7F271A01E2958BC00AB9938 /* Quit Button 2.png */,
+				E7F271A11E2958BC00AB9938 /* Resume Button.png */,
+				E7F271A21E2958BC00AB9938 /* Show Score.png */,
+			);
+			name = "Pause Panel And Buttons";
+			path = "1 - Pause Panel And Buttons";
+			sourceTree = "<group>";
+		};
+		E7F271A71E2958D000AB9938 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				E7F271A81E2958D000AB9938 /* Background music.mp3 */,
+				E7F271A91E2958D000AB9938 /* Click Sound.wav */,
+				E7F271AA1E2958D000AB9938 /* Coin Sound.wav */,
+				E7F271AB1E2958D000AB9938 /* Life Sound.wav */,
+			);
+			name = Music;
+			path = "6 - Music";
+			sourceTree = "<group>";
+		};
+		E7F271B01E2958EB00AB9938 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E7F271B11E2958EB00AB9938 /* 1 - Gameplay Buttons */,
+				E7F271B51E2958EB00AB9938 /* 2 - Options Buttons */,
+				E7F271BB1E2958EB00AB9938 /* 3 - Main Menu Buttons */,
+			);
+			name = Buttons;
+			path = "8 - Buttons";
+			sourceTree = "<group>";
+		};
+		E7F271B11E2958EB00AB9938 /* 1 - Gameplay Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E7F271B21E2958EB00AB9938 /* Pause Button.png */,
+				E7F271B31E2958EB00AB9938 /* Ready.png */,
+				E7F271B41E2958EB00AB9938 /* Score.png */,
+			);
+			path = "1 - Gameplay Buttons";
+			sourceTree = "<group>";
+		};
+		E7F271B51E2958EB00AB9938 /* 2 - Options Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E7F271B61E2958EB00AB9938 /* Back Button.png */,
+				E7F271B71E2958EB00AB9938 /* Check Sign.png */,
+				E7F271B81E2958EB00AB9938 /* Easy Button.png */,
+				E7F271B91E2958EB00AB9938 /* Hard Button.png */,
+				E7F271BA1E2958EB00AB9938 /* Medium Button.png */,
+			);
+			path = "2 - Options Buttons";
+			sourceTree = "<group>";
+		};
+		E7F271BB1E2958EB00AB9938 /* 3 - Main Menu Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E7F271BC1E2958EB00AB9938 /* Highscore Button.png */,
+				E7F271BD1E2958EB00AB9938 /* Music Off Button.png */,
+				E7F271BE1E2958EB00AB9938 /* Music On Button.png */,
+				E7F271BF1E2958EB00AB9938 /* Options Button.png */,
+				E7F271C01E2958EB00AB9938 /* Quit Button.png */,
+				E7F271C11E2958EB00AB9938 /* Start Game Button.png */,
+			);
+			path = "3 - Main Menu Buttons";
+			sourceTree = "<group>";
+		};
+		E7F271D31E29593000AB9938 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				E7455BEA1E29B11B003A5A5F /* trap.png */,
+				E7455BE81E29B110003A5A5F /* Coin.png */,
+				E7F271D91E29595B00AB9938 /* Sphere.gif */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		E7F271D41E29594200AB9938 /* Map elements */ = {
+			isa = PBXGroup;
+			children = (
+				E7AFDC9D1E2BC0DA003CBF8E /* goal.png */,
+				E7F271D51E29595400AB9938 /* chest.gif */,
+				E7F271D61E29595400AB9938 /* wall.png */,
+			);
+			name = "Map elements";
+			sourceTree = "<group>";
+		};
+		E7F271DF1E29616500AB9938 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E7455BE21E29A06B003A5A5F /* GameplayScene.sks */,
+				E7F271E01E29618700AB9938 /* MainMenu.sks */,
+				E7F271E81E296A2700AB9938 /* HighscoreScene.sks */,
+				E7F271F61E296DCE00AB9938 /* OptionScene.sks */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		E7F271EA1E296AE000AB9938 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				E7455BDE1E299CDD003A5A5F /* witcher.jpg */,
+				E7F271EB1E296AE000AB9938 /* Game BG.png */,
+				E7F271EC1E296AE000AB9938 /* Highscore BG.png */,
+				E7F271ED1E296AE000AB9938 /* Menu BG.png */,
+				E7F271EE1E296AE000AB9938 /* Options BG.png */,
+			);
+			name = Backgrounds;
+			path = "7 - Backgrounds";
+			sourceTree = "<group>";
+		};
+		E7F271F31E296C8F00AB9938 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E7F271F41E296C8F00AB9938 /* blow.ttf */,
+			);
+			name = Fonts;
+			path = "5 - Fonts";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7F271781E29536D00AB9938 /* APIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7F271911E29536E00AB9938 /* Build configuration list for PBXNativeTarget "APIOS" */;
+			buildPhases = (
+				E7F271751E29536D00AB9938 /* Sources */,
+				E7F271761E29536D00AB9938 /* Frameworks */,
+				E7F271771E29536D00AB9938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APIOS;
+			productName = APIOS;
+			productReference = E7F271791E29536D00AB9938 /* APIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7F271711E29536D00AB9938 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kuster Software Development";
+				TargetAttributes = {
+					E7F271781E29536D00AB9938 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 38U9SJ4562;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E7F271741E29536D00AB9938 /* Build configuration list for PBXProject "APIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7F271701E29536D00AB9938;
+			productRefGroup = E7F2717A1E29536D00AB9938 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7F271781E29536D00AB9938 /* APIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7F271771E29536D00AB9938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F271C61E2958EB00AB9938 /* Check Sign.png in Resources */,
+				E7F271CD1E2958EB00AB9938 /* Options Button.png in Resources */,
+				E7F271A51E2958BC00AB9938 /* Resume Button.png in Resources */,
+				E7F271F71E296DCE00AB9938 /* OptionScene.sks in Resources */,
+				E7F271E91E296A2700AB9938 /* HighscoreScene.sks in Resources */,
+				E7F271C51E2958EB00AB9938 /* Back Button.png in Resources */,
+				E7F271C91E2958EB00AB9938 /* Medium Button.png in Resources */,
+				E7F271E11E29618800AB9938 /* MainMenu.sks in Resources */,
+				E7F271C31E2958EB00AB9938 /* Ready.png in Resources */,
+				E7F271C41E2958EB00AB9938 /* Score.png in Resources */,
+				E7F271AC1E2958D000AB9938 /* Background music.mp3 in Resources */,
+				E7F271AD1E2958D000AB9938 /* Click Sound.wav in Resources */,
+				E7F271CA1E2958EB00AB9938 /* Highscore Button.png in Resources */,
+				E7F271881E29536E00AB9938 /* Main.storyboard in Resources */,
+				E7F271D71E29595400AB9938 /* chest.gif in Resources */,
+				E7F271C81E2958EB00AB9938 /* Hard Button.png in Resources */,
+				E7F271CE1E2958EB00AB9938 /* Quit Button.png in Resources */,
+				E7F271CC1E2958EB00AB9938 /* Music On Button.png in Resources */,
+				E7F271D81E29595400AB9938 /* wall.png in Resources */,
+				E7F271A31E2958BC00AB9938 /* Pause Menu.png in Resources */,
+				E7F271F51E296C8F00AB9938 /* blow.ttf in Resources */,
+				E7AFDC9E1E2BC0DA003CBF8E /* goal.png in Resources */,
+				E7F271AE1E2958D000AB9938 /* Coin Sound.wav in Resources */,
+				E7F271AF1E2958D000AB9938 /* Life Sound.wav in Resources */,
+				E7455BE91E29B110003A5A5F /* Coin.png in Resources */,
+				E7F271DA1E29595B00AB9938 /* Sphere.gif in Resources */,
+				E7F271F21E296AE000AB9938 /* Options BG.png in Resources */,
+				E7455BDF1E299CDD003A5A5F /* witcher.jpg in Resources */,
+				E7455BEB1E29B11B003A5A5F /* trap.png in Resources */,
+				E7F271CB1E2958EB00AB9938 /* Music Off Button.png in Resources */,
+				E7F271C71E2958EB00AB9938 /* Easy Button.png in Resources */,
+				E7F271F11E296AE000AB9938 /* Menu BG.png in Resources */,
+				E7F271F01E296AE000AB9938 /* Highscore BG.png in Resources */,
+				E7455BE31E29A06B003A5A5F /* GameplayScene.sks in Resources */,
+				E7F271EF1E296AE000AB9938 /* Game BG.png in Resources */,
+				E7F2718A1E29536E00AB9938 /* Assets.xcassets in Resources */,
+				E7F271A41E2958BC00AB9938 /* Quit Button 2.png in Resources */,
+				E7F2718D1E29536E00AB9938 /* LaunchScreen.storyboard in Resources */,
+				E7F271CF1E2958EB00AB9938 /* Start Game Button.png in Resources */,
+				E7F271A61E2958BC00AB9938 /* Show Score.png in Resources */,
+				E7F271C21E2958EB00AB9938 /* Pause Button.png in Resources */,
+				E7F271811E29536E00AB9938 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7F271751E29536D00AB9938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F271FB1E296F7D00AB9938 /* OptionScene.swift in Sources */,
+				E7AFDC9C1E2BA51E003CBF8E /* AudioManager.swift in Sources */,
+				E725BB741E2A3DC70059E8D5 /* GameManager.swift in Sources */,
+				E7455BE51E29A0D2003A5A5F /* GameplayScene.swift in Sources */,
+				E7F271851E29536E00AB9938 /* GameViewController.swift in Sources */,
+				E7F271F91E296F4100AB9938 /* HighscoreScene.swift in Sources */,
+				E725BB761E2A41C40059E8D5 /* CollectablesController.swift in Sources */,
+				E7455BF01E29D271003A5A5F /* GameplayController.swift in Sources */,
+				E7E32BE81E2A67A800B4DB34 /* GameData.swift in Sources */,
+				E7F271E31E29632900AB9938 /* MainMenuScene.swift in Sources */,
+				E7F2717D1E29536D00AB9938 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E7F271861E29536E00AB9938 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7F271871E29536E00AB9938 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E7F2718B1E29536E00AB9938 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7F2718C1E29536E00AB9938 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7F2718F1E29536E00AB9938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7F271901E29536E00AB9938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7F271921E29536E00AB9938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38U9SJ4562;
+				INFOPLIST_FILE = APIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kustra.kacper.APIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7F271931E29536E00AB9938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38U9SJ4562;
+				INFOPLIST_FILE = APIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kustra.kacper.APIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7F271741E29536D00AB9938 /* Build configuration list for PBXProject "APIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7F2718F1E29536E00AB9938 /* Debug */,
+				E7F271901E29536E00AB9938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7F271911E29536E00AB9938 /* Build configuration list for PBXNativeTarget "APIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7F271921E29536E00AB9938 /* Debug */,
+				E7F271931E29536E00AB9938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7F271711E29536D00AB9938 /* Project object */;
+}
